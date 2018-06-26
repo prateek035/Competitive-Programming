@@ -36,9 +36,9 @@ void sieve()
 	}
 }
 
-vector<int > getFactorisation(int x)
+set<int > getFactorisation(int x)
 {
-	vector<int >ans;
+	set<int >ans;
 	while(x!=1)
 	{
 		ans.pb(spf[x]);
@@ -53,7 +53,7 @@ int main()
     int x;
     cin>>x;
 
-    vector<int >p= getFactorisation(x);
+    set<int >p= getFactorisation(x);
 
     for(int i=0;i<p.size();i++)
     	cout<<p[i]<<" ";
